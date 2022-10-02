@@ -1,6 +1,3 @@
-// Background
-const background = document.querySelector(".background");
-
 // Date variable and zero function
 const date = new Date();
 const addZero = (t) => {
@@ -17,6 +14,19 @@ const year = document.querySelector(".year-date");
 dayDate.innerText = addZero(date.getDate());
 monthDate.innerText = addZero(date.getMonth());
 year.innerText = addZero(date.getFullYear());
+
+// Background
+const background = document.querySelector(".background");
+const currentMonth = Number(new Date().getMonth());
+if (currentMonth >= 3 && currentMonth <= 5) {
+  background.className = "background spring";
+} else if (currentMonth >= 6 && currentMonth <= 8) {
+  background.className = "background summer";
+} else if (currentMonth >= 9 && currentMonth <= 11) {
+  background.className = "background fall";
+} else {
+  background.className = "background winter";
+}
 
 // Time divs
 const hour = document.querySelector(".hour");

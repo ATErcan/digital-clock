@@ -12,27 +12,54 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-.summer {
-  background-image: url();
-}
 .fall {
-  background-image: url("https://img.freepik.com/free-photo/road-surrounded-by-trees-with-colorful-leaves-during-fall_181624-2589.jpg?w=740&t=st=1664739671~exp=1664740271~hmac=3f00c6f6c2cabd938c84f2cdcd50a44aceddcd09615833d20d30b7d76c2d6b27");
+  background-image: url("https://images6.alphacoders.com/338/338596.jpg");
+}
+.winter {
+  background-image: url("https://wallpaperaccess.com/full/5865793.jpg");
+}
+.spring {
+  background-image: url("https://wallpaper.dog/large/17253151.jpg");
+}
+.summer {
+  background-image: url("https://www.enjpg.com/img/2020/summer-18.jpg");
+}
+header {
+  display: flex;
+  align-items: center;
+  height: 20vh;
 }
 header .div {
-  height: 20vh;
-  font-size: 3rem;
+  font-size: 5rem;
+  font-family: "Special Elite", cursive;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  width: max-content;
+  margin: auto;
+}
+main {
+  height: 60vh;
 }
 main .time {
-  height: 60vh;
   font-size: 5rem;
   font-family: clockFont;
+  color: #f00;
+  text-shadow: 2px 2px 20px #f00;
+  background-color: rgba(10, 10, 10, 0.2);
+  width: max-content;
+  margin: auto;
+  height: max-content;
 }
 main .days {
   height: 60vh;
 }
 main .days .day-name {
-  font-family: "Bungee Spice", cursive;
-  font-size: 2rem;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-family: "Special Elite", cursive;
+  font-size: 3rem;
 }
 .day-gif {
   min-height: 250px;
@@ -40,6 +67,9 @@ main .days .day-name {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .monday {
   background-image: url("https://i.giphy.com/media/Lk0P1jhMLE7nfLZBg8/200w.webp");
@@ -66,6 +96,9 @@ main .days .day-name {
 }
 footer {
   height: 20vh;
+}
+footer .footer-bg {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 footer a {
   display: inline-block;
