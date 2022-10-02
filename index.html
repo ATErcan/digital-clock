@@ -11,39 +11,55 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Digital Clock</title>
   </head>
   <body>
-    <header class="date container">
-      <div class="d-flex justify-content-center p-4">
-        <div class="day-date"></div>
-        <span>.</span>
-        <div class="month-date"></div>
-        <span>.</span>
-        <div class="year-date"></div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="hour"></div>
-          <span>:</span>
-          <div class="minute"></div>
-          <span>:</span>
-          <div class="second"></div>
+    <div class="background">
+      <header class="date container">
+        <div class="d-flex justify-content-center align-items-center div">
+          <div class="day-date"></div>
+          <span>.</span>
+          <div class="month-date"></div>
+          <span>.</span>
+          <div class="year-date"></div>
         </div>
-        <div class="col-md-6">
-          <div class="day-name"></div>
-          <div class="day-gif"></div>
+      </header>
+      <main class="main">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center align-items-center time">
+              <div class="hour"></div>
+              <span>:</span>
+              <div class="minute"></div>
+              <span>:</span>
+              <div class="second"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="d-flex align-items-center justify-content-center flex-column w-100 days"
+            >
+              <div class="day-name"></div>
+              <div class="day-gif"></div>
+            </div>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
 
-    <footer class="text-center">
+    <footer
+      class="d-flex flex-column justify-content-center bg-dark text-white text-center"
+    >
       <a
         href="https://github.com/ATErcan"
-        class="text-dark text-decoration-none credits"
+        class="text-white text-decoration-none credits"
         >- Credits -</a
       >
       <p>Me - A full-stack developer of the near future...</p>

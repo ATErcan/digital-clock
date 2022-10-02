@@ -1,3 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.summer {
+  background-image: url();
+}
+.fall {
+  background-image: url("https://img.freepik.com/free-photo/road-surrounded-by-trees-with-colorful-leaves-during-fall_181624-2589.jpg?w=740&t=st=1664739671~exp=1664740271~hmac=3f00c6f6c2cabd938c84f2cdcd50a44aceddcd09615833d20d30b7d76c2d6b27");
+}
+header .div {
+  height: 20vh;
+  font-size: 3rem;
+}
+main .time {
+  height: 60vh;
+  font-size: 5rem;
+  font-family: clockFont;
+}
+main .days {
+  height: 60vh;
+}
+main .days .day-name {
+  font-family: "Bungee Spice", cursive;
+  font-size: 2rem;
+}
+.day-gif {
+  min-height: 250px;
+  min-width: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.monday {
+  background-image: url("https://i.giphy.com/media/Lk0P1jhMLE7nfLZBg8/200w.webp");
+}
+.tuesday {
+  background-image: url("https://i.giphy.com/media/et69KWHAxAR8c/giphy.webp");
+  width: 350px;
+  height: 250px;
+}
+.wednesday {
+  background-image: url("https://i.giphy.com/media/OjDsrByk1P3RC/giphy.webp");
+}
+.thursday {
+  background-image: url("https://i.giphy.com/media/VsSksaIufXQR2/200w.webp");
+}
+.friday {
+  background-image: url("https://i.giphy.com/media/d8D5RoR8adbJaFF3TV/200w.webp");
+}
+.saturday {
+  background-image: url("https://i.giphy.com/media/2yLNN4wTy7Zr8JSXHB/200w.webp");
+}
+.sunday {
+  background-image: url("https://media4.giphy.com/media/Wn0Lj9phmxne7atJsM/giphy.webp?cid=ecf05e47dw5hkkanbnamz1xwsf6x24hqzg8l4sodqpcb43id&rid=giphy.webp&ct=g");
+}
+footer {
+  height: 20vh;
+}
 footer a {
   display: inline-block;
 }
@@ -17,4 +86,8 @@ footer a:hover {
   100% {
     transform: scale(1);
   }
+}
+@font-face {
+  font-family: clockFont;
+  src: url(./fonts/DS-DIGIB.TTF);
 }
