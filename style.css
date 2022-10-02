@@ -37,7 +37,7 @@ header .div {
   color: #fff;
   width: max-content;
   margin: auto;
-  animation: date 1.5s ease-in-out 1;
+  animation: date 1.5s ease-in-out 0.5s 1;
 }
 main {
   height: 60vh;
@@ -53,10 +53,10 @@ main .time {
   height: max-content;
 }
 main .days-animation {
-  animation: days 2s ease-in-out 1;
+  animation: days 2s ease-in-out 0.5s 1;
 }
 main .time-animation {
-  animation: time 2s ease-in-out 1;
+  animation: time 2s ease-in-out 0.5s 1;
 }
 main .days .day-name {
   width: max-content;
