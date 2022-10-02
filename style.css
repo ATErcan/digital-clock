@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .background {
   background-repeat: no-repeat;
@@ -30,19 +30,20 @@ header {
   height: 20vh;
 }
 header .div {
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: "Special Elite", cursive;
   font-weight: bolder;
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   width: max-content;
   margin: auto;
+  animation: date 1.5s ease-in-out 1;
 }
 main {
   height: 60vh;
 }
 main .time {
-  font-size: 5rem;
+  font-size: 7rem;
   font-family: clockFont;
   color: #f00;
   text-shadow: 2px 2px 20px #f00;
@@ -51,8 +52,11 @@ main .time {
   margin: auto;
   height: max-content;
 }
-main .days {
-  height: 60vh;
+main .days-animation {
+  animation: days 2s ease-in-out 1;
+}
+main .time-animation {
+  animation: time 2s ease-in-out 1;
 }
 main .days .day-name {
   width: max-content;
@@ -62,8 +66,8 @@ main .days .day-name {
   font-size: 3rem;
 }
 .day-gif {
-  min-height: 250px;
-  min-width: 250px;
+  min-width: 300px;
+  min-height: 300px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -106,6 +110,36 @@ footer a {
 footer a:hover {
   animation: click 0.5s linear 1;
 }
+@keyframes date {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes days {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes time {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @keyframes click {
   0% {
     transform: scale(1.2);
@@ -123,4 +157,64 @@ footer a:hover {
 @font-face {
   font-family: clockFont;
   src: url(./fonts/DS-DIGIB.TTF);
+}
+@media screen and (min-width: 992px) and (max-width: 1370px) {
+  header .div {
+    font-size: 5rem;
+  }
+  main .time {
+    font-size: 6rem;
+  }
+  main .days .day-name {
+    font-size: 2.7rem;
+  }
+  .day-gif {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header .div {
+    font-size: 4.5rem;
+  }
+  main .time {
+    font-size: 5rem;
+  }
+  main .days .day-name {
+    font-size: 2.5rem;
+  }
+  .day-gif {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header .div {
+    font-size: 4rem;
+  }
+  main .time {
+    font-size: 4rem;
+  }
+  main .days .day-name {
+    font-size: 2.2rem;
+  }
+  .day-gif {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  header .div {
+    font-size: 3rem;
+  }
+  main .time {
+    font-size: 3rem;
+  }
+  main .days .day-name {
+    font-size: 1.8rem;
+  }
+  .day-gif {
+    width: 150px;
+    height: 150px;
+  }
 }
