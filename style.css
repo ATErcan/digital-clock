@@ -199,8 +199,8 @@ footer a:hover {
     font-size: 2.2rem;
   }
   .day-gif {
-    width: 200px;
-    height: 200px;
+    min-width: 230px;
+    min-height: 230px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 576px) {
@@ -214,7 +214,7 @@ footer a:hover {
     font-size: 1.8rem;
   }
   .day-gif {
-    width: 150px;
-    height: 150px;
+    min-width: 220px;
+    min-height: 220px;
   }
 }
